@@ -5,7 +5,7 @@ function set() {
     button.style.display = "none";
 }
 var tog = false;
-var circleCount=0,crossCount=0;
+var circleCount=0,crossCount=0,chance=0;
 function occupy(ths) {
     var add = document.querySelector('#' + ths);
     if(tog==false && add.classList!= "circle circleSelected " && add.classList!= "cross crossSelected ") {
@@ -34,8 +34,32 @@ function occupy(ths) {
         (box1.classList.value == box5.classList.value && box1.classList.value == box9.classList.value)||
         (box3.classList.value == box5.classList.value && box3.classList.value == box7.classList.value))
     {
+        chance++;
         setTimeout(() => {
-            alert(add.classList[0] + " win");
+            document.querySelector('.winner').style.display = "grid";
+            document.querySelector('.winner').innerHTML 
+                = "<span>" + add.classList[0] + " is Winner</span>";
+            setTimeout(() => {
+                document.querySelector('.winner').style.transform = "rotate(180deg)";
+            },1500);
+            setTimeout(() => {
+                if(chance%2!=0) {
+                    document.querySelector('.winner').innerHTML 
+                    = "<span>Circle turn</span>";
+                    tog=true;
+                }
+            else {
+                document.querySelector('.winner').innerHTML 
+                    = "<span>Cross turn</span>";
+                tog=false;
+                }
+            },3500);
+            setTimeout(() => {
+                document.querySelector('.winner').style.transform = "rotate(0deg)";
+            },5500);
+            setTimeout(() => {
+                document.querySelector('.winner').style.display = "none";
+            },7500);
             box1.classList = "box fa1";
             box2.classList = "box fa2";
             box3.classList = "box fa3";
