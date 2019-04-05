@@ -1,4 +1,4 @@
-body, .container,.tic, #gamePad, .circle, .cross, .circleSelected, .crossSelected {
+body, .container,.tic, #gamePad, .circle, .cross, .circleSelected, .crossSelected, .points {
     box-sizing: border-box;
 }
 body {
@@ -105,4 +105,37 @@ body {
         height: 150;
         font-size: 2em;
     }
+}
+.points {
+    width: 30%;
+    height: 10%;
+    max-height: 100px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    position: fixed;
+    margin: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+.points>span {
+    margin: auto;
+    font-size: 2em;
+}
+#crossWin {
+    left: 0px;
+    transform: rotate(180deg);
+}
+#circleWin {
+    right: 0px;
+    transform: rotate(180deg);
+}
+#crossWin2 {
+    left: 0px;
+    bottom: 0px;
+}
+#circleWin2 {
+    right: 0px;
+    bottom: 0px;
 }
