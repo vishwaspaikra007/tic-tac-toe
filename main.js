@@ -14,9 +14,7 @@ function occupy(ths) {
     else if(tog==true && add.classList!= "circle circleSelected " && add.classList!= "cross crossSelected ") {
         add.classList = "circle circleSelected ";
         tog = !tog;
-    }    
-}
-var clear = setInterval(() => {
+    }   
     var box1 = document.querySelector('#box1').classList.value;
     var box2 = document.querySelector('#box2').classList.value;
     var box3 = document.querySelector('#box3').classList.value;
@@ -31,16 +29,14 @@ var clear = setInterval(() => {
         (box7 == box8 && box7 == box9)||
         (box1 == box4 && box1 == box7)||
         (box2 == box5 && box2 == box8)||
-        (box3 == box6 && box4 == box9)||
+        (box3 == box6 && box3 == box9)||
         (box1 == box5 && box1 == box9)||
         (box3 == box5 && box3 == box7))
     {
-        clearInterval(clear);
         setTimeout(() => {
-            alert(box1 + "win");
+            alert(add.classList[0] + " win");
         }, 700); 
-    }
-        
-    
-}, 100);
+    } 
+}
+
 

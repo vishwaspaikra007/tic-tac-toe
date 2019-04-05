@@ -1,6 +1,3 @@
-html {
-    overflow: hidden;
-}
 body, .container,.tic, #gamePad, .circle, .cross, .circleSelected, .crossSelected {
     box-sizing: border-box;
 }
@@ -98,4 +95,14 @@ body {
     transform: scale(1);
     transform: rotate(45deg);
 }
-
+@media only screen and (max-width:800px) {
+    #gamePad {
+        width: 76%;
+        margin-left: 9%;
+    }
+    #play {
+        width: 200px;
+        height: 150;
+        font-size: 2em;
+    }
+}
