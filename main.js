@@ -34,11 +34,34 @@ function occupy(ths) {
         (box1.classList.value == box5.classList.value && box1.classList.value == box9.classList.value)||
         (box3.classList.value == box5.classList.value && box3.classList.value == box7.classList.value))
     {
+        prntWin(add);
+    } 
+    else if((box1.classList[0] == 'cross' || box1.classList[0] == 'circle')&&
+        (box2.classList[0] == 'cross' || box2.classList[0] == 'circle')&&
+        (box3.classList[0] == 'cross' || box3.classList[0] == 'circle')&&
+        (box4.classList[0] == 'cross' || box4.classList[0] == 'circle')&&
+        (box5.classList[0] == 'cross' || box5.classList[0] == 'circle')&&
+        (box6.classList[0] == 'cross' || box6.classList[0] == 'circle')&&
+        (box7.classList[0] == 'cross' || box7.classList[0] == 'circle')&&
+        (box8.classList[0] == 'cross' || box8.classList[0] == 'circle')&&
+        (box9.classList[0] == 'cross' || box9.classList[0] == 'circle'))
+    {
+        var draw = "draw";
+        prntWin(draw);
+    }
+    }
+    function prntWin(add) {
         chance++;
         setTimeout(() => {
             document.querySelector('.winner').style.display = "grid";
-            document.querySelector('.winner').innerHTML 
+            if(add=='draw') {
+                document.querySelector('.winner').innerHTML 
+                = "<span><b>DRAW<b></span>";
+            }
+            else {
+                document.querySelector('.winner').innerHTML 
                 = "<span>" + add.classList[0] + " is Winner</span>";
+            }
             setTimeout(() => {
                 document.querySelector('.winner').style.transform = "rotate(180deg)";
             },1500);
@@ -80,7 +103,6 @@ function occupy(ths) {
             document.querySelector('#circleWin').innerHTML = "<span>Circle" + circleCount + "</span>";
             document.querySelector('#circleWin2').innerHTML = "<span>Circle" + circleCount + "</span>";
         }
-    } 
-}
+    }
 
 
