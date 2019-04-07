@@ -95,10 +95,10 @@ body {
     transform: rotate(45deg);
 }
 @media only screen and (max-width:800px) {
-    #gamePad {
+    /* #gamePad {
         width: 76%;
         margin-left: 9%;
-    }
+    } */
     #play {
         width: 200px;
         height: 150;
