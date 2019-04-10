@@ -10,44 +10,50 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="winner"></div>
-    <div id="crossWin" class="points"></div>
-    <div id="circleWin" class="points"></div>
-    <div id="crossWin2" class="points"></div>
-    <div id="circleWin2" class="points"></div>
-    <div class="button">
-        <button id="play" onclick="set()">PLAY</button>
-    </div>
-    <div class="container" id="container" >
-        <div id="gamePad">
-            <div class="tic" id="tic1" onclick="occupy('box1')">
-                <div class=" box fa1 " id="box1" ></div>
+    <div class="mainBody">
+        <div class="page" id="page1">
+            <div class="winner"></div>
+            <div id="crossWin" class="points"></div>
+            <div id="circleWin" class="points"></div>
+            <div id="crossWin2" class="points"></div>
+            <div id="circleWin2" class="points"></div>
+            <div class="button">
+                <button id="play" onclick="set()">PLAY</button>
             </div>
-            <div class="tic" id="tic2" onclick="occupy('box2')">
-                <div class=" box fa2" id="box2" ></div>
-            </div>
-            <div class="tic" id="tic3" onclick="occupy('box3')">
-                <div class=" box fa3" id="box3" ></div>
-            </div>
-            <div class="tic" id="tic4" onclick="occupy('box4')">
-                <div class=" box fa4" id="box4" ></div>
-            </div>
-            <div class="tic" id="tic5" onclick="occupy('box5')">
-                <div class=" box fa5" id="box5" ></div>
-            </div>
-            <div class="tic" id="tic6" onclick="occupy('box6')">
-                <div class=" box fa6" id="box6" ></div>
-            </div>
-            <div class="tic " id="tic7" onclick="occupy('box7')">
-                <div class=" box fa7" id="box7" ></div>
-            </div>
-            <div class="tic " id="tic8" onclick="occupy('box8')">
-                <div class=" box fa8" id="box8" ></div>
-            </div>
-            <div class="tic " id="tic9" onclick="occupy('box9')">
-                <div class=" box fa9" id="box9" ></div>
+            <div class="container" id="container" >
+                <div id="gamePad">
+                    <div class="tic" id="tic1" onclick="occupy('box1')">
+                        <div class=" box fa1 " id="box1" ></div>
+                    </div>
+                    <div class="tic" id="tic2" onclick="occupy('box2')">
+                        <div class=" box fa2" id="box2" ></div>
+                    </div>
+                    <div class="tic" id="tic3" onclick="occupy('box3')">
+                        <div class=" box fa3" id="box3" ></div>
+                    </div>
+                    <div class="tic" id="tic4" onclick="occupy('box4')">
+                        <div class=" box fa4" id="box4" ></div>
+                    </div>
+                    <div class="tic" id="tic5" onclick="occupy('box5')">
+                        <div class=" box fa5" id="box5" ></div>
+                    </div>
+                    <div class="tic" id="tic6" onclick="occupy('box6')">
+                        <div class=" box fa6" id="box6" ></div>
+                    </div>
+                    <div class="tic " id="tic7" onclick="occupy('box7')">
+                        <div class=" box fa7" id="box7" ></div>
+                    </div>
+                    <div class="tic " id="tic8" onclick="occupy('box8')">
+                        <div class=" box fa8" id="box8" ></div>
+                    </div>
+                    <div class="tic " id="tic9" onclick="occupy('box9')">
+                        <div class=" box fa9" id="box9" ></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="page" id="page2"></div>
     </div>
+    
 </body>
 </html>

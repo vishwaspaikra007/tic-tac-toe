@@ -95,13 +95,13 @@ function occupy(ths) {
         }, 700); 
         if(add.classList[0] == 'cross') {
             crossCount++ ;
-            document.querySelector('#crossWin').innerHTML = "<span>Cross:" + crossCount + "</span>";
-            document.querySelector('#crossWin2').innerHTML = "<span>Cross:" + crossCount + "</span>";
+            document.querySelector('#crossWin').innerHTML = "<span>Cross : " + crossCount + "</span>";
+            document.querySelector('#crossWin2').innerHTML = "<span>Cross : " + crossCount + "</span>";
         }
         else if( add.classList[0] == 'circle'){
             circleCount++;
-            document.querySelector('#circleWin').innerHTML = "<span>Circle" + circleCount + "</span>";
-            document.querySelector('#circleWin2').innerHTML = "<span>Circle" + circleCount + "</span>";
+            document.querySelector('#circleWin').innerHTML = "<span>Circle : " + circleCount + "</span>";
+            document.querySelector('#circleWin2').innerHTML = "<span>Circle : " + circleCount + "</span>";
         }
     }
 
