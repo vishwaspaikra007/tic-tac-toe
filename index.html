@@ -10,16 +10,15 @@
     <title>Document</title>
 </head>
 <body>
+<div class="button">
+    <button id="play" onclick="set()">PLAY</button>
+</div>
+<div class="winner"></div>
+<div class="bodyScroll">
     <div class="mainBody">
         <div class="page" id="page1">
-            <div class="winner"></div>
             <div id="crossWin" class="points"></div>
             <div id="circleWin" class="points"></div>
-            <div id="crossWin2" class="points"></div>
-            <div id="circleWin2" class="points"></div>
-            <div class="button">
-                <button id="play" onclick="set()">PLAY</button>
-            </div>
             <div class="container" id="container" >
                 <div id="gamePad">
                     <div class="tic" id="tic1" onclick="occupy('box1')">
@@ -51,9 +50,19 @@
                     </div>
                 </div>
             </div>
+            <div id="crossWin2" class="points"></div>
+            <div id="circleWin2" class="points"></div>
         </div>
-        <div class="page" id="page2"></div>
+        <div class="page" id="page2">
+            <div class="menuContainer">
+                <div class="menu" onclick="expandMenu(this,0)" id="menu1"></div>
+                <div class="menu" onclick="expandMenu(this,1)" id="menu2"></div>
+                <div class="menu" onclick="expandMenu(this,2)" id="menu3"></div>
+                <div class="menu" onclick="expandMenu(this,3)" id="menu4"></div>
+                <div class="menu" onclick="expandMenu(this,4)" id="menu5"></div>
+            </div>  
+        </div>
     </div>
-    
+</div> 
 </body>
 </html>

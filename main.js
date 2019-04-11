@@ -3,6 +3,30 @@ function set() {
     container.style.display = "grid";
     var button = document.querySelector('.button');
     button.style.display = "none";
+
+}
+function expandMenu(ths,index) {
+    ths.classList += " expandMenu ";
+    
+    var non = document.querySelectorAll(".menu");
+    // setTimeout(() => {
+    //     for(i=0;i<non.length;i++)
+    //     {
+    //         if(i!=index)
+    //         non[i].style.display = "none";
+    //         non[i].style.width = "0px";
+    //     }
+    // }, 500);
+    for(i=0;i<non.length;i++)
+        {
+            if(i!=index)
+            {
+                non[i].style.width = "0px";
+                non[i].style.height = "0px";
+            }
+        }
+    document.querySelector(".menuContainer").style.display =  "content";
+    ths.style.display = "block";
 }
 var tog = false;
 var circleCount=0,crossCount=0,chance=0;
