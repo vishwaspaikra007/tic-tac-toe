@@ -42,7 +42,7 @@ body {
     height: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
-    display: none;
+    display: grid;
     grid-template-columns: auto;
 }
 #gamePad {
@@ -57,7 +57,7 @@ body {
     background: radial-gradient(rgb(5, 39, 61) 37%, transparent,transparent);
 }
 .tic {
-    border-radius: 10%;
+    /* border-radius: 10%; */
     background:  rgb(15, 121, 192);
     padding: 20px;
     width: 160px;
@@ -210,6 +210,7 @@ body {
     height: 100px;
     margin: auto;
     transition: 0.5s;
+    overflow: hidden;
 }
 .expandMenu {
     width: calc(100vw - 40px);

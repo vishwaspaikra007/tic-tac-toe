@@ -1,22 +1,16 @@
+// function to remove button container
+// game appears
 function set() {
-    var container = document.querySelector('.container');
-    container.style.display = "grid";
     var button = document.querySelector('.button');
     button.style.display = "none";
-
 }
+function addContent(ths,index) {
+    
+}
+// to expand menu section
 function expandMenu(ths,index) {
     ths.classList += " expandMenu ";
-    
     var non = document.querySelectorAll(".menu");
-    // setTimeout(() => {
-    //     for(i=0;i<non.length;i++)
-    //     {
-    //         if(i!=index)
-    //         non[i].style.display = "none";
-    //         non[i].style.width = "0px";
-    //     }
-    // }, 500);
     for(i=0;i<non.length;i++)
         {
             if(i!=index)
@@ -25,9 +19,11 @@ function expandMenu(ths,index) {
                 non[i].style.height = "0px";
             }
         }
-    document.querySelector(".menuContainer").style.display =  "content";
-    ths.style.display = "block";
+    addContent(ths,index);
 }
+// main logic behind tic tac toe
+//it's better if i don't see it again
+//cause in future it will be something better
 var tog = false;
 var circleCount=0,crossCount=0,chance=0;
 function occupy(ths) {
