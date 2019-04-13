@@ -113,7 +113,9 @@ function occupy(ths) {
             box8.classList = "box fa8";
             box9.classList = "box fa9";
         }, 700); 
-        if(add.classList[0] == 'cross') {
+        if(add == 'draw')
+            return;
+        else if(add.classList[0] == 'cross') {
             crossCount++ ;
             document.querySelector('#crossWin').innerHTML = "<span>Cross : " + crossCount + "</span>";
             document.querySelector('#crossWin2').innerHTML = "<span>Cross : " + crossCount + "</span>";
