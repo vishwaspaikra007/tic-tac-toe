@@ -1,4 +1,4 @@
-.menu > h1 {
+.menu > .h1BeforeClick {
     margin: auto;
     text-align: center;
     height: 100%;
@@ -9,7 +9,36 @@
     transition: 0.5s;
     cursor: pointer;
 }
-.menu:hover > h1 {
+.menu:hover > .h1BeforeClick {
     font-size: 150px;
     transform: rotateY(60deg);
+}
+.h1AfterClick {
+    color: blue;
+    transition: 0.5s;
+    height: auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#menu2 > div
+ {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-row-gap: 10px;
+     
+ }.color {
+    margin: auto;
+    width: 95%;
+    height: 100px;
+    background: rgb(218, 209, 208);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color input {
+    display: none;
 }

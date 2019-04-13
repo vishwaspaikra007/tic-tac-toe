@@ -4,7 +4,7 @@ html {
 }
 body, .container,.tic, #gamePad, .circle, .cross,
 .circleSelected, .crossSelected, .points, .mainBody,
-.page,.menuContainer, .menu {
+.page,.menuContainer, .menu, .close {
     box-sizing: border-box;
 }
 body {
@@ -219,4 +219,18 @@ body {
     border-radius: 20px;
     background: white;
     z-index: 1;
+}
+.close {
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    padding: 10px;
+    display: none;
 }

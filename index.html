@@ -11,7 +11,10 @@
     <meta name="theme-color" content="#0b609a">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/colorMenu.css">
+    <link rel="stylesheet" href="./css/color.css">
     <script src="./js/main.js"></script>
+    <script src="./js/colorMenu.js"></script>
+    <script src="./js/close.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,6 +22,7 @@
     <button id="play" onclick="set()">PLAY</button>
 </div>
 <div class="winner"></div>
+<div class="close" onclick="close(this)">X</div>
 <div class="bodyScroll">
     <div class="mainBody">
         <div class="page" id="page1">
@@ -58,34 +62,35 @@
             <div id="crossWin2" class="points"></div>
             <div id="circleWin2" class="points"></div>
         </div>
+<!-- Page 2 started Page 2 started Page 2 started Page 2 started  -->
         <div class="page" id="page2">
             <div class="menuContainer">
                 <div class="menu" onclick="expandMenu(this,0)" id="menu1">
-                    <h1><b>About</b></h1>
+                    <h1 class="h1BeforeClick"><b>About</b></h1>
                 </div>
-                <div class="menu" onclick="expandMenu(this,1)" id="menu2">
-                    <h1><b>Color</b></h1>
+                <div class="menu" onclick="expandMenu(this,1);content(this,'#menu2');" id="menu2">
+                    <h1 class="h1BeforeClick"><b>Color</b></h1>
                     <div>
-                        <label><span><input class="color" id="color1" onclick="changeColor(1)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color2" onclick="changeColor(2)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color3" onclick="changeColor(3)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color4" onclick="changeColor(4)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color5" onclick="changeColor(5)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color6" onclick="changeColor(6)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color7" onclick="changeColor(7)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color8" onclick="changeColor(8)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color9" onclick="changeColor(9)"  type="radial"></span></label>
-                        <label><span><input class="color" id="color10" onclick="changeColor(10)"  type="radial"></span></label>
+                        <label><div class="color" id="color1" onclick="changeColor(1)"><b>RED</b></div></label>
+                        <label><div class="color" id="color2" onclick="changeColor(2)"><b>ORANGE</b></div></label>
+                        <label><div class="color" id="color3" onclick="changeColor(3)"><b>GREEN</b></div></label>
+                        <label><div class="color" id="color4" onclick="changeColor(4)"><b>TOMATO</b></div></label>
+                        <label><div class="color" id="color5" onclick="changeColor(5)"><b>LIME</b></div></label>
+                        <label><div class="color" id="color6" onclick="changeColor(6)"><b>BLUE</b></div></label>
+                        <label><div class="color" id="color7" onclick="changeColor(7)"><b>PINK</b></div></label>
+                        <label><div class="color" id="color8" onclick="changeColor(8)"><b>CYAN</b></div></label>
+                        <label><div class="color" id="color9" onclick="changeColor(9)"><b>BLACK</b></div></label>
+                        <label><div class="color" id="color10" onclick="changeColor(10)"><b>LIGHT BLUE</b></div></label>
                     </div>
                 </div>
                 <div class="menu" onclick="expandMenu(this,2)" id="menu3">
-                    <h1><b>Computer</b></h1>
+                    <h1 class="h1BeforeClick"><b>Computer</b></h1>
                 </div>
                 <div class="menu" onclick="expandMenu(this,3)" id="menu4">
-                    <h1><b>More</b></h1>
+                    <h1 class="h1BeforeClick"><b>More</b></h1>
                 </div>
                 <div class="menu" onclick="expandMenu(this,4)" id="menu5">
-                    <h1><b>Me</b></h1>
+                    <h1 class="h1BeforeClick"><b>Me</b></h1>
                 </div>
             </div>  
         </div>

@@ -1,0 +1,51 @@
+#color1:hover , #color:active{
+    background: red;
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color2:hover , #color:active{
+    background: orange;
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color3:hover , #color:active{
+    background: green;
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color4:hover , #color:active{
+    background: tomato;
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color5:hover , #color:active{
+    background: limegreen;
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color6:hover , #color:active{
+    background: blue;
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color7:hover , #color:active{
+    background: pink;
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color8:hover , #color:active{
+    background: rgb(29, 155, 155);
+    font-size:130%;
+    transform:rotate(1deg);
+}
+#color9:hover , #color:active{
+    background: black;
+    font-size:130%;
+    transform:rotate(1deg);
+    color: beige;
+}
+#color10:hover , #color:active{
+    background: rgb(15, 121, 192);
+    font-size:130%;
+    transform:rotate(1deg);
+}

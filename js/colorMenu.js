@@ -1,2 +1,7 @@
-var H1 = document.querySelector("#menu2>h1");
-alert(H1.textContent);
+var content = (ths,id) => {
+    setTimeout(() => {
+        const mess = document.querySelector(id + " h1");
+        mess.classList = "h1AfterClick";
+        // alert(mess.innerHTML);
+    }, 500);
+}

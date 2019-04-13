@@ -19,6 +19,7 @@ function expandMenu(ths,index) {
                 non[i].style.height = "0px";
             }
         }
+    document.querySelector('.close').style.display = 'block';
     addContent(ths,index);
 }
 // main logic behind tic tac toe
