@@ -28,12 +28,12 @@ var tog = false;
 var circleCount=0,crossCount=0,chance=0;
 function occupy(ths) {
     var add = document.querySelector('#' + ths);
-    if(tog==false && add.classList!= "circle circleSelected " && add.classList!= "cross crossSelected ") {
-        add.classList = "cross crossSelected ";
+    if(tog==false && add.classList!= "circle" && add.classList!= "cross") {
+        add.classList = "cross";
         tog = !tog;
     }
-    else if(tog==true && add.classList!= "circle circleSelected " && add.classList!= "cross crossSelected ") {
-        add.classList = "circle circleSelected ";
+    else if(tog==true && add.classList!= "circle" && add.classList!= "cross") {
+        add.classList = "circle";
         tog = !tog;
     }   
     var box1 = document.querySelector('#box1');
