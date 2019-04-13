@@ -22,7 +22,7 @@
     <button id="play" onclick="set()">PLAY</button>
 </div>
 <div class="winner"></div>
-<div class="close" onclick="close(this)">X</div>
+<div class="close" onclick="closeMenu(this)">X</div>
 <div class="bodyScroll">
     <div class="mainBody">
         <div class="page" id="page1">
@@ -65,10 +65,10 @@
 <!-- Page 2 started Page 2 started Page 2 started Page 2 started  -->
         <div class="page" id="page2">
             <div class="menuContainer">
-                <div class="menu" onclick="expandMenu(this,0)" id="menu1">
+                <div class="menu" onclick="expandMenu(this,0);content(this);" id="menu1">
                     <h1 class="h1BeforeClick"><b>About</b></h1>
                 </div>
-                <div class="menu" onclick="expandMenu(this,1);content(this,'#menu2');" id="menu2">
+                <div class="menu" onclick="expandMenu(this,1);content(this);" id="menu2">
                     <h1 class="h1BeforeClick"><b>Color</b></h1>
                     <div>
                         <label><div class="color" id="color1" onclick="changeColor(1)"><b>RED</b></div></label>
@@ -83,13 +83,13 @@
                         <label><div class="color" id="color10" onclick="changeColor(10)"><b>LIGHT BLUE</b></div></label>
                     </div>
                 </div>
-                <div class="menu" onclick="expandMenu(this,2)" id="menu3">
+                <div class="menu" onclick="expandMenu(this,2);content(this);" id="menu3">
                     <h1 class="h1BeforeClick"><b>Computer</b></h1>
                 </div>
-                <div class="menu" onclick="expandMenu(this,3)" id="menu4">
+                <div class="menu" onclick="expandMenu(this,3);content(this);" id="menu4">
                     <h1 class="h1BeforeClick"><b>More</b></h1>
                 </div>
-                <div class="menu" onclick="expandMenu(this,4)" id="menu5">
+                <div class="menu" onclick="expandMenu(this,4);content(this);" id="menu5">
                     <h1 class="h1BeforeClick"><b>Me</b></h1>
                 </div>
             </div>  

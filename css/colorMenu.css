@@ -26,7 +26,7 @@
 #menu2 > div
  {
      display: grid;
-     grid-template-columns: auto auto auto;
+     grid-template-columns: 33.33% 33.33% 33.33%;
      grid-row-gap: 10px;
      
  }.color {
@@ -41,4 +41,13 @@
 }
 .color input {
     display: none;
+}
+@media only screen and (max-width:800px) {
+    .menu {
+        font-size: 30px;
+    }
+    #menu2 > div
+    {
+        grid-template-columns: 50% 50%;
+    }
 }

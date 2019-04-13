@@ -212,6 +212,11 @@ body {
     transition: 0.5s;
     overflow: hidden;
 }
+.shrinkMenu
+{
+    width: 0px;
+    height: 0px;
+}
 .expandMenu {
     width: calc(100vw - 40px);
     height: 80vh;
@@ -233,4 +238,5 @@ body {
     text-align: center;
     padding: 10px;
     display: none;
+    cursor: pointer;
 }

@@ -15,8 +15,7 @@ function expandMenu(ths,index) {
         {
             if(i!=index)
             {
-                non[i].style.width = "0px";
-                non[i].style.height = "0px";
+                non[i].classList += " shrinkMenu "
             }
         }
     document.querySelector('.close').style.display = 'block';
