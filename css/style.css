@@ -4,7 +4,7 @@ html {
 }
 body, .container,.tic, #gamePad, .circle, .cross,
 .circleSelected, .crossSelected, .points, .mainBody,
-.page,.menuContainer, .menu, .close {
+.page,.menuContainer, .menu, .close ,#menu1 p ,#menu5 p{
     box-sizing: border-box;
 }
 body {
@@ -203,7 +203,8 @@ body {
     height: 100px;
     margin: auto;
     transition: 0.5s;
-    overflow: scroll;
+    overflow-y: scroll;
+    padding-left: 20px;
 }
 .menu::-webkit-scrollbar {
     width: 20px;
@@ -228,6 +229,19 @@ body {
     background: white;
     z-index: 1;
 }
+#menu1 p, #menu5 p {
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    font-size: 23px;
+    text-align: center;
+    border: 25px solid rgba(0,0,0,0.2);
+}
+#menu5 p {
+    width: 350px;
+    height: 350px;
+}
 .close {
     width: 40px;
     height: 40px;
@@ -236,7 +250,7 @@ body {
     border-radius: 50%;
     position: absolute;
     z-index: 2;
-    right: 47%;
+    right: calc(50% - 20px);
     top: 10px;
     text-align: center;
     padding: 10px;
