@@ -4,6 +4,8 @@ var content = (ths,id) => {
         for(i=0;i<mess.length;i++)
         {
             mess[i].children[0].classList = "h1AfterClick";
+            mess[i].style.overflowY = "scroll";
+            mess[i].style.paddingLeft = "20px";
         }
        
         // alert(mess.innerHTML);

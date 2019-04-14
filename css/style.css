@@ -199,12 +199,12 @@ body {
     display: inline-block;
     background: white;
     border-radius: 10px;
-    width: 49.6%;
+    width: 49.5%;
     height: 100px;
     margin: auto;
     transition: 0.5s;
-    overflow-y: scroll;
-    padding-left: 20px;
+    overflow: hidden;
+    padding-left: 0px;
 }
 .menu::-webkit-scrollbar {
     width: 20px;
