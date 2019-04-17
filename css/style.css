@@ -87,7 +87,7 @@ body {
 }
 .box {
     margin: auto;
-    transform: rotate(45deg);
+    transform: rotate(35deg);
     transform: scale(1);
     background: rgba(0, 0, 0, 0.589);
 }
@@ -99,9 +99,10 @@ body {
     border-radius: 50%;
     transition: 1s;
     transform: scale(0.8);
+    transform: rotate(45deg);
 }
 .cross {
-    transition: 1s;
+    transition: 0.7s;
     margin: auto;
     /* display: none; */
     background: white;
