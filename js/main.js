@@ -117,13 +117,13 @@ function occupy(ths) {
             return;
         else if(add.classList[0] == 'cross') {
             crossCount++ ;
-            document.querySelector('#crossWin').innerHTML = "<span>Cross : " + crossCount + "</span>";
-            document.querySelector('#crossWin2').innerHTML = "<span>Cross : " + crossCount + "</span>";
+            document.querySelector('#crossWin span').innerHTML = "Cross : " + crossCount;
+            document.querySelector('#crossWin2 span').innerHTML = "Cross : " + crossCount;
         }
         else if( add.classList[0] == 'circle'){
             circleCount++;
-            document.querySelector('#circleWin').innerHTML = "<span>Circle : " + circleCount + "</span>";
-            document.querySelector('#circleWin2').innerHTML = "<span>Circle : " + circleCount + "</span>";
+            document.querySelector('#circleWin span').innerHTML = "Circle : " + circleCount;
+            document.querySelector('#circleWin2 span').innerHTML = "Circle : " + circleCount;
         }
     }
 

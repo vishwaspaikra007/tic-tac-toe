@@ -1,0 +1,31 @@
+@media only screen and (max-width:800px) {
+    .mainBody {
+        font-size: 200%;
+    }
+    .container {
+        width: 100vw;
+        height: 80vh;
+    } #gamePad {
+        width: 100vw;
+        height: 100vw;
+    } .tic {
+        width: 33vw;
+        height: 33vw;
+    } .cross::after {
+        width: 473%;
+    } .cross {
+        height: 120%;
+        margin-left: auto; 
+    } .points {
+        width: 40vw;
+        height: 5vh;
+    } .menuContainer {
+        width: 100vw;
+    } .menu {
+        width: 48.5%;
+        height: 57px;
+    } .expandMenu {
+        width: calc(100vw - 40px);
+        height: 80vh;
+    }
+}
