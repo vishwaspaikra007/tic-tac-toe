@@ -8,6 +8,8 @@
     color: blue;
     transition: 0.5s;
     cursor: pointer;
+} .menu > h1 {
+    font-size: 1.5em;
 }
 .menu:hover > .h1BeforeClick {
     font-size: 150px;

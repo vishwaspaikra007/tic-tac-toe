@@ -145,12 +145,11 @@ body {
     color: white;
     position: relative;
     text-align: center;
-    display: grid;
-    grid-template-columns: auto;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .points>span {
-    margin: auto;
     font-size: 2em;
     padding: 5px;
     border-radius: 20px;
@@ -233,7 +232,6 @@ body {
 #menu1 p, #menu5 p {
     padding: 30px;
     width: 300px;
-    height: 300px;
     margin: auto;
     font-size: 23px;
     text-align: center;
