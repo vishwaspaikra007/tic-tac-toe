@@ -48,4 +48,24 @@
     background: rgb(15, 121, 192);
     font-size:130%;
     transform:rotate(1deg);
+} #color11:hover {
+    background: linear-gradient(to left top,violet,blue,green,yellow,orange,red);
+    font-size:130%;
+    transform:rotate(1deg);
+}  .rainbow {
+    background: linear-gradient(to left,violet,blue,green,yellow,orange,red);
+    background-size: 800%;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
+} .ticRainbow {
+    background-image: radial-gradient(transparent 69%,rgba(0,0,0,0.3));
+    background-size: 200% 200%;
+} .gamePadRainbow {
+    background: none;
+} @keyframes rainbow {
+    0%{background-position: top left}
+    100%{background-position: bottom right}
+    /* 100%{background-position: top left} */
+
 }
